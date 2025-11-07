@@ -26,11 +26,11 @@ public class SampleTests
         Assert.That(4.Equals(6 - 2));
     }
 
-    //[Test]
-    //[Category("regression")]
-    //[AllureSubSuite("Divide")]
-    //public void Divide_ByZero_Throws()
-    //{
-    //    Assert.Throws<System.DivideByZeroException>(() => { var _ = 1 / 0; });
-    //}
+    [Test]
+    [Category("regression")]
+    [AllureSubSuite("Divide")]
+    public void Divide_ByZero_Throws()
+    {
+        Assert.Throws<System.DivideByZeroException>(() => { var _ = 1 / 0; });
+    }
 }
